@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F82B47021C791D36003A62CA /* Swick.h in Headers */ = {isa = PBXBuildFile; fileRef = F82B47011C791D36003A62CA /* Swick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F82B47091C791D36003A62CA /* Swick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82B46FE1C791D36003A62CA /* Swick.framework */; };
+		F82B470E1C791D36003A62CA /* SwickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82B470D1C791D36003A62CA /* SwickTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F82B470A1C791D36003A62CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F82B46F51C791D36003A62CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82B46FD1C791D36003A62CA;
+			remoteInfo = Swick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F82B46FE1C791D36003A62CA /* Swick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82B47011C791D36003A62CA /* Swick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swick.h; sourceTree = "<group>"; };
+		F82B47031C791D36003A62CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82B47081C791D36003A62CA /* SwickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82B470D1C791D36003A62CA /* SwickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwickTests.swift; sourceTree = "<group>"; };
+		F82B470F1C791D36003A62CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F82B46FA1C791D36003A62CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82B47051C791D36003A62CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82B47091C791D36003A62CA /* Swick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F82B46F41C791D36003A62CA = {
+			isa = PBXGroup;
+			children = (
+				F82B47001C791D36003A62CA /* Swick */,
+				F82B470C1C791D36003A62CA /* SwickTests */,
+				F82B46FF1C791D36003A62CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F82B46FF1C791D36003A62CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F82B46FE1C791D36003A62CA /* Swick.framework */,
+				F82B47081C791D36003A62CA /* SwickTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F82B47001C791D36003A62CA /* Swick */ = {
+			isa = PBXGroup;
+			children = (
+				F82B47011C791D36003A62CA /* Swick.h */,
+				F82B47031C791D36003A62CA /* Info.plist */,
+			);
+			path = Swick;
+			sourceTree = "<group>";
+		};
+		F82B470C1C791D36003A62CA /* SwickTests */ = {
+			isa = PBXGroup;
+			children = (
+				F82B470D1C791D36003A62CA /* SwickTests.swift */,
+				F82B470F1C791D36003A62CA /* Info.plist */,
+			);
+			path = SwickTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F82B46FB1C791D36003A62CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82B47021C791D36003A62CA /* Swick.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F82B46FD1C791D36003A62CA /* Swick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82B47121C791D36003A62CA /* Build configuration list for PBXNativeTarget "Swick" */;
+			buildPhases = (
+				F82B46F91C791D36003A62CA /* Sources */,
+				F82B46FA1C791D36003A62CA /* Frameworks */,
+				F82B46FB1C791D36003A62CA /* Headers */,
+				F82B46FC1C791D36003A62CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swick;
+			productName = Swick;
+			productReference = F82B46FE1C791D36003A62CA /* Swick.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F82B47071C791D36003A62CA /* SwickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82B47151C791D36003A62CA /* Build configuration list for PBXNativeTarget "SwickTests" */;
+			buildPhases = (
+				F82B47041C791D36003A62CA /* Sources */,
+				F82B47051C791D36003A62CA /* Frameworks */,
+				F82B47061C791D36003A62CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F82B470B1C791D36003A62CA /* PBXTargetDependency */,
+			);
+			name = SwickTests;
+			productName = SwickTests;
+			productReference = F82B47081C791D36003A62CA /* SwickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F82B46F51C791D36003A62CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Artyom Y. Razinov";
+				TargetAttributes = {
+					F82B46FD1C791D36003A62CA = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					F82B47071C791D36003A62CA = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F82B46F81C791D36003A62CA /* Build configuration list for PBXProject "Swick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F82B46F41C791D36003A62CA;
+			productRefGroup = F82B46FF1C791D36003A62CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F82B46FD1C791D36003A62CA /* Swick */,
+				F82B47071C791D36003A62CA /* SwickTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F82B46FC1C791D36003A62CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82B47061C791D36003A62CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F82B46F91C791D36003A62CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82B47041C791D36003A62CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82B470E1C791D36003A62CA /* SwickTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F82B470B1C791D36003A62CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82B46FD1C791D36003A62CA /* Swick */;
+			targetProxy = F82B470A1C791D36003A62CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F82B47101C791D36003A62CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F82B47111C791D36003A62CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F82B47131C791D36003A62CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Swick/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razinov.Swick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F82B47141C791D36003A62CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Swick/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razinov.Swick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F82B47161C791D36003A62CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razinov.SwickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F82B47171C791D36003A62CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razinov.SwickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F82B46F81C791D36003A62CA /* Build configuration list for PBXProject "Swick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82B47101C791D36003A62CA /* Debug */,
+				F82B47111C791D36003A62CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82B47121C791D36003A62CA /* Build configuration list for PBXNativeTarget "Swick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82B47131C791D36003A62CA /* Debug */,
+				F82B47141C791D36003A62CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F82B47151C791D36003A62CA /* Build configuration list for PBXNativeTarget "SwickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82B47161C791D36003A62CA /* Debug */,
+				F82B47171C791D36003A62CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F82B46F51C791D36003A62CA /* Project object */;
+}

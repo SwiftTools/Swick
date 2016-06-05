@@ -1,9 +1,6 @@
 //
-//  Swick.h
-//  Swick
-//
-//  Created by Artyom Y. Razinov on 2/21/16.
-//  Copyright © 2016 Artyom Y. Razinov. All rights reserved.
+// Copyright (c) 2016 Swick contributors
+// This program is made available under the terms of the MIT License.
 //
 
 #import <UIKit/UIKit.h>

@@ -7,9 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DFC58C89E340F5D90A4039C /* Pods_SwickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DAD637B98BFA84E9AEE7ADF /* Pods_SwickTests.framework */; };
 		F82B47021C791D36003A62CA /* Swick.h in Headers */ = {isa = PBXBuildFile; fileRef = F82B47011C791D36003A62CA /* Swick.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F82B47091C791D36003A62CA /* Swick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82B46FE1C791D36003A62CA /* Swick.framework */; };
-		F82B470E1C791D36003A62CA /* SwickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82B470D1C791D36003A62CA /* SwickTests.swift */; };
+		F83683FA1C8EC263005442E5 /* ProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83683F91C8EC263005442E5 /* ProtocolTests.swift */; };
+		F86A05C71D02DB99004B5066 /* CallRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05B31D02DB99004B5066 /* CallRecord.swift */; };
+		F86A05C81D02DB99004B5066 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05B41D02DB99004B5066 /* Expectation.swift */; };
+		F86A05C91D02DB99004B5066 /* MockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05B61D02DB99004B5066 /* MockManager.swift */; };
+		F86A05CA1D02DB99004B5066 /* SwickMockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05B71D02DB99004B5066 /* SwickMockManager.swift */; };
+		F86A05CB1D02DB99004B5066 /* FunctionalMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05B91D02DB99004B5066 /* FunctionalMatcher.swift */; };
+		F86A05CC1D02DB99004B5066 /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05BA1D02DB99004B5066 /* Matcher.swift */; };
+		F86A05CD1D02DB99004B5066 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05BC1D02DB99004B5066 /* Stub.swift */; };
+		F86A05CE1D02DB99004B5066 /* StubForFunctionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05BD1D02DB99004B5066 /* StubForFunctionBuilder.swift */; };
+		F86A05CF1D02DB99004B5066 /* FileLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05BF1D02DB99004B5066 /* FileLine.swift */; };
+		F86A05D01D02DB99004B5066 /* SwickError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05C01D02DB99004B5066 /* SwickError.swift */; };
+		F86A05D11D02DB99004B5066 /* SwickVoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05C11D02DB99004B5066 /* SwickVoid.swift */; };
+		F86A05D21D02DB99004B5066 /* FailDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05C31D02DB99004B5066 /* FailDescription.swift */; };
+		F86A05D31D02DB99004B5066 /* Failer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05C41D02DB99004B5066 /* Failer.swift */; };
+		F86A05D41D02DB99004B5066 /* VerificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05C51D02DB99004B5066 /* VerificationResult.swift */; };
+		F86A05D51D02DB99004B5066 /* XcodeTestFailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05C61D02DB99004B5066 /* XcodeTestFailer.swift */; };
+		F86A05D81D02DBAE004B5066 /* MockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05D71D02DBAE004B5066 /* MockType.swift */; };
+		F86A05DA1D02DBC2004B5066 /* StubBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05D91D02DBC2004B5066 /* StubBuilder.swift */; };
+		F86A05DC1D02DBDA004B5066 /* ExpectationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A05DB1D02DBDA004B5066 /* ExpectationBuilder.swift */; };
+		F889C3AD1D040FF500A6990E /* ProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889C3AB1D040FF500A6990E /* ProtocolMock.swift */; };
+		F889C3AF1D04101600A6990E /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889C3AE1D04101600A6990E /* Math.swift */; };
+		F889C3B11D04101C00A6990E /* MathMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889C3B01D04101C00A6990E /* MathMock.swift */; };
+		F889C3B31D0410A500A6990E /* MathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889C3B21D0410A500A6990E /* MathTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +46,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D03D14FD97A6D523D3D8B90 /* Pods-SwickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwickTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwickTests/Pods-SwickTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A3DCBBC791A7563339CE0CA /* Pods_SwickGen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwickGen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4932C477C9D79392C8788960 /* Pods-SwickGen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwickGen.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwickGen/Pods-SwickGen.release.xcconfig"; sourceTree = "<group>"; };
+		4B308736033724607BD7CD00 /* Pods-SwickGen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwickGen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwickGen/Pods-SwickGen.debug.xcconfig"; sourceTree = "<group>"; };
+		8C6398CADB2A4C19C5C5F76D /* Pods_SwickGenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwickGenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DAD637B98BFA84E9AEE7ADF /* Pods_SwickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A58EAA5F61AECBF90BB6382B /* Pods-SwickGenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwickGenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwickGenTests/Pods-SwickGenTests.release.xcconfig"; sourceTree = "<group>"; };
+		C6D25348728D2F96B8EEB095 /* Pods-SwickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwickTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwickTests/Pods-SwickTests.release.xcconfig"; sourceTree = "<group>"; };
+		F6717E697CFBA548493D1C66 /* Pods-SwickGenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwickGenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwickGenTests/Pods-SwickGenTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F82B46FE1C791D36003A62CA /* Swick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82B47011C791D36003A62CA /* Swick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swick.h; sourceTree = "<group>"; };
 		F82B47031C791D36003A62CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F82B47081C791D36003A62CA /* SwickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F82B470D1C791D36003A62CA /* SwickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwickTests.swift; sourceTree = "<group>"; };
 		F82B470F1C791D36003A62CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82B488B1C7A3682003A62CA /* SwiftXPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftXPC.framework; path = Submodules/SwiftXPC/build/Debug/SwiftXPC.framework; sourceTree = "<group>"; };
+		F83683F91C8EC263005442E5 /* ProtocolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProtocolTests.swift; path = ../ProtocolTests.swift; sourceTree = "<group>"; };
+		F86A05B31D02DB99004B5066 /* CallRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallRecord.swift; sourceTree = "<group>"; };
+		F86A05B41D02DB99004B5066 /* Expectation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
+		F86A05B61D02DB99004B5066 /* MockManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockManager.swift; sourceTree = "<group>"; };
+		F86A05B71D02DB99004B5066 /* SwickMockManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwickMockManager.swift; sourceTree = "<group>"; };
+		F86A05B91D02DB99004B5066 /* FunctionalMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalMatcher.swift; sourceTree = "<group>"; };
+		F86A05BA1D02DB99004B5066 /* Matcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matcher.swift; sourceTree = "<group>"; };
+		F86A05BC1D02DB99004B5066 /* Stub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		F86A05BD1D02DB99004B5066 /* StubForFunctionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubForFunctionBuilder.swift; sourceTree = "<group>"; };
+		F86A05BF1D02DB99004B5066 /* FileLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLine.swift; sourceTree = "<group>"; };
+		F86A05C01D02DB99004B5066 /* SwickError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwickError.swift; sourceTree = "<group>"; };
+		F86A05C11D02DB99004B5066 /* SwickVoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwickVoid.swift; sourceTree = "<group>"; };
+		F86A05C31D02DB99004B5066 /* FailDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailDescription.swift; sourceTree = "<group>"; };
+		F86A05C41D02DB99004B5066 /* Failer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Failer.swift; sourceTree = "<group>"; };
+		F86A05C51D02DB99004B5066 /* VerificationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationResult.swift; sourceTree = "<group>"; };
+		F86A05C61D02DB99004B5066 /* XcodeTestFailer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeTestFailer.swift; sourceTree = "<group>"; };
+		F86A05D71D02DBAE004B5066 /* MockType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockType.swift; sourceTree = "<group>"; };
+		F86A05D91D02DBC2004B5066 /* StubBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubBuilder.swift; sourceTree = "<group>"; };
+		F86A05DB1D02DBDA004B5066 /* ExpectationBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpectationBuilder.swift; sourceTree = "<group>"; };
+		F87A68931C7C92F6009AB422 /* SourceKittenFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SourceKittenFramework.framework; path = Frameworks/SourceKittenFramework.framework; sourceTree = "<group>"; };
+		F889C3AB1D040FF500A6990E /* ProtocolMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolMock.swift; sourceTree = "<group>"; };
+		F889C3AE1D04101600A6990E /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		F889C3B01D04101C00A6990E /* MathMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathMock.swift; sourceTree = "<group>"; };
+		F889C3B21D0410A500A6990E /* MathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,18 +100,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				F82B47091C791D36003A62CA /* Swick.framework in Frameworks */,
+				5DFC58C89E340F5D90A4039C /* Pods_SwickTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2839BEB5A4056CFD9C0174F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F87A68931C7C92F6009AB422 /* SourceKittenFramework.framework */,
+				F82B488B1C7A3682003A62CA /* SwiftXPC.framework */,
+				2A3DCBBC791A7563339CE0CA /* Pods_SwickGen.framework */,
+				8C6398CADB2A4C19C5C5F76D /* Pods_SwickGenTests.framework */,
+				8DAD637B98BFA84E9AEE7ADF /* Pods_SwickTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		884C6684D24098293CC11E85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B308736033724607BD7CD00 /* Pods-SwickGen.debug.xcconfig */,
+				4932C477C9D79392C8788960 /* Pods-SwickGen.release.xcconfig */,
+				F6717E697CFBA548493D1C66 /* Pods-SwickGenTests.debug.xcconfig */,
+				A58EAA5F61AECBF90BB6382B /* Pods-SwickGenTests.release.xcconfig */,
+				0D03D14FD97A6D523D3D8B90 /* Pods-SwickTests.debug.xcconfig */,
+				C6D25348728D2F96B8EEB095 /* Pods-SwickTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F82B46F41C791D36003A62CA = {
 			isa = PBXGroup;
 			children = (
 				F82B47001C791D36003A62CA /* Swick */,
 				F82B470C1C791D36003A62CA /* SwickTests */,
 				F82B46FF1C791D36003A62CA /* Products */,
+				2839BEB5A4056CFD9C0174F9 /* Frameworks */,
+				884C6684D24098293CC11E85 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +155,7 @@
 		F82B47001C791D36003A62CA /* Swick */ = {
 			isa = PBXGroup;
 			children = (
+				F83683E71C8EBF9D005442E5 /* Sources */,
 				F82B47011C791D36003A62CA /* Swick.h */,
 				F82B47031C791D36003A62CA /* Info.plist */,
 			);
@@ -80,10 +165,111 @@
 		F82B470C1C791D36003A62CA /* SwickTests */ = {
 			isa = PBXGroup;
 			children = (
-				F82B470D1C791D36003A62CA /* SwickTests.swift */,
+				F889C3AA1D040FF500A6990E /* SampleForSwickGen */,
+				F889C3AC1D040FF500A6990E /* SwickGenOutput */,
 				F82B470F1C791D36003A62CA /* Info.plist */,
 			);
 			path = SwickTests;
+			sourceTree = "<group>";
+		};
+		F83683E71C8EBF9D005442E5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F86A05D61D02DBA6004B5066 /* Mock */,
+				F86A05B21D02DB99004B5066 /* Expect */,
+				F86A05B51D02DB99004B5066 /* Manager */,
+				F86A05B81D02DB99004B5066 /* Match */,
+				F86A05BB1D02DB99004B5066 /* Stub */,
+				F86A05BE1D02DB99004B5066 /* Utility */,
+				F86A05C21D02DB99004B5066 /* Verify */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F86A05B21D02DB99004B5066 /* Expect */ = {
+			isa = PBXGroup;
+			children = (
+				F86A05B31D02DB99004B5066 /* CallRecord.swift */,
+				F86A05B41D02DB99004B5066 /* Expectation.swift */,
+				F86A05DB1D02DBDA004B5066 /* ExpectationBuilder.swift */,
+			);
+			path = Expect;
+			sourceTree = "<group>";
+		};
+		F86A05B51D02DB99004B5066 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F86A05B61D02DB99004B5066 /* MockManager.swift */,
+				F86A05B71D02DB99004B5066 /* SwickMockManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F86A05B81D02DB99004B5066 /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				F86A05B91D02DB99004B5066 /* FunctionalMatcher.swift */,
+				F86A05BA1D02DB99004B5066 /* Matcher.swift */,
+			);
+			path = Match;
+			sourceTree = "<group>";
+		};
+		F86A05BB1D02DB99004B5066 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				F86A05BC1D02DB99004B5066 /* Stub.swift */,
+				F86A05BD1D02DB99004B5066 /* StubForFunctionBuilder.swift */,
+				F86A05D91D02DBC2004B5066 /* StubBuilder.swift */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		F86A05BE1D02DB99004B5066 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F86A05BF1D02DB99004B5066 /* FileLine.swift */,
+				F86A05C01D02DB99004B5066 /* SwickError.swift */,
+				F86A05C11D02DB99004B5066 /* SwickVoid.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F86A05C21D02DB99004B5066 /* Verify */ = {
+			isa = PBXGroup;
+			children = (
+				F86A05C31D02DB99004B5066 /* FailDescription.swift */,
+				F86A05C41D02DB99004B5066 /* Failer.swift */,
+				F86A05C51D02DB99004B5066 /* VerificationResult.swift */,
+				F86A05C61D02DB99004B5066 /* XcodeTestFailer.swift */,
+			);
+			path = Verify;
+			sourceTree = "<group>";
+		};
+		F86A05D61D02DBA6004B5066 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F86A05D71D02DBAE004B5066 /* MockType.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		F889C3AA1D040FF500A6990E /* SampleForSwickGen */ = {
+			isa = PBXGroup;
+			children = (
+				F83683F91C8EC263005442E5 /* ProtocolTests.swift */,
+				F889C3AB1D040FF500A6990E /* ProtocolMock.swift */,
+			);
+			path = SampleForSwickGen;
+			sourceTree = "<group>";
+		};
+		F889C3AC1D040FF500A6990E /* SwickGenOutput */ = {
+			isa = PBXGroup;
+			children = (
+				F889C3AE1D04101600A6990E /* Math.swift */,
+				F889C3B01D04101C00A6990E /* MathMock.swift */,
+				F889C3B21D0410A500A6990E /* MathTests.swift */,
+			);
+			path = SwickGenOutput;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F82B47151C791D36003A62CA /* Build configuration list for PBXNativeTarget "SwickTests" */;
 			buildPhases = (
+				A05168117BE5A61E6F96669A /* Check Pods Manifest.lock */,
 				F82B47041C791D36003A62CA /* Sources */,
 				F82B47051C791D36003A62CA /* Frameworks */,
 				F82B47061C791D36003A62CA /* Resources */,
+				C97D1BB547C3B7C26545EE0C /* Embed Pods Frameworks */,
+				D8759DAD2824AD305719C5EA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +349,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = F82B46F41C791D36003A62CA;
 			productRefGroup = F82B46FF1C791D36003A62CA /* Products */;
@@ -189,11 +379,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A05168117BE5A61E6F96669A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C97D1BB547C3B7C26545EE0C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwickTests/Pods-SwickTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8759DAD2824AD305719C5EA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwickTests/Pods-SwickTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F82B46F91C791D36003A62CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86A05D21D02DB99004B5066 /* FailDescription.swift in Sources */,
+				F86A05DA1D02DBC2004B5066 /* StubBuilder.swift in Sources */,
+				F86A05CD1D02DB99004B5066 /* Stub.swift in Sources */,
+				F86A05CB1D02DB99004B5066 /* FunctionalMatcher.swift in Sources */,
+				F86A05CA1D02DB99004B5066 /* SwickMockManager.swift in Sources */,
+				F86A05D01D02DB99004B5066 /* SwickError.swift in Sources */,
+				F86A05CC1D02DB99004B5066 /* Matcher.swift in Sources */,
+				F86A05C81D02DB99004B5066 /* Expectation.swift in Sources */,
+				F86A05CE1D02DB99004B5066 /* StubForFunctionBuilder.swift in Sources */,
+				F86A05D31D02DB99004B5066 /* Failer.swift in Sources */,
+				F86A05C71D02DB99004B5066 /* CallRecord.swift in Sources */,
+				F86A05C91D02DB99004B5066 /* MockManager.swift in Sources */,
+				F86A05CF1D02DB99004B5066 /* FileLine.swift in Sources */,
+				F86A05DC1D02DBDA004B5066 /* ExpectationBuilder.swift in Sources */,
+				F86A05D11D02DB99004B5066 /* SwickVoid.swift in Sources */,
+				F86A05D41D02DB99004B5066 /* VerificationResult.swift in Sources */,
+				F86A05D81D02DBAE004B5066 /* MockType.swift in Sources */,
+				F86A05D51D02DB99004B5066 /* XcodeTestFailer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +457,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F82B470E1C791D36003A62CA /* SwickTests.swift in Sources */,
+				F83683FA1C8EC263005442E5 /* ProtocolTests.swift in Sources */,
+				F889C3B31D0410A500A6990E /* MathTests.swift in Sources */,
+				F889C3B11D04101C00A6990E /* MathMock.swift in Sources */,
+				F889C3AD1D040FF500A6990E /* ProtocolMock.swift in Sources */,
+				F889C3AF1D04101600A6990E /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +493,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -253,7 +512,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -281,7 +541,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -295,7 +554,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,29 +568,54 @@
 		F82B47131C791D36003A62CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Swick/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_framework",
+					XCTest,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razinov.Swick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F82B47141C791D36003A62CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Swick/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_framework",
+					XCTest,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razinov.Swick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -339,8 +624,10 @@
 		};
 		F82B47161C791D36003A62CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D03D14FD97A6D523D3D8B90 /* Pods-SwickTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SwickTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razinov.SwickTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,8 +636,10 @@
 		};
 		F82B47171C791D36003A62CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6D25348728D2F96B8EEB095 /* Pods-SwickTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SwickTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razinov.SwickTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -376,6 +665,7 @@
 				F82B47141C791D36003A62CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F82B47151C791D36003A62CA /* Build configuration list for PBXNativeTarget "SwickTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +674,7 @@
 				F82B47171C791D36003A62CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

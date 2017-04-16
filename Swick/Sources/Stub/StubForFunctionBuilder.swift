@@ -14,7 +14,7 @@ public class StubForFunctionBuilder<Args, ReturnType> {
         self.matcher = matcher
     }
     
-    public func thenReturn(result: ReturnType) {
+    public func thenReturn(_ result: ReturnType) {
         mockManager.addStub(
             functionId: functionId,
             closure: { _ in return result },
@@ -22,7 +22,7 @@ public class StubForFunctionBuilder<Args, ReturnType> {
         )
     }
     
-    public func thenInvoke(closure: Args -> ReturnType) {
+    public func thenInvoke(_ closure: @escaping (Args) -> ReturnType) {
         mockManager.addStub(
             functionId: functionId,
             closure: { any in return closure(any as! Args) },

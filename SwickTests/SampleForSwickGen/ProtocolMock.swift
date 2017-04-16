@@ -9,20 +9,20 @@
 import Swick
 
 protocol Protocol {
-    func routine(a: String, b: Int) -> Int
+    func routine(_ a: String, b: Int) -> Int
 }
 
 class ProtocolMock: Protocol, MockType {
     let mockManager: Swick.MockManager
     
     class StubBuilder: Swick.StubBuilder {
-        private let mockManager: Swick.MockManager
+        fileprivate let mockManager: Swick.MockManager
         
         required init(mockManager: Swick.MockManager) {
             self.mockManager = mockManager
         }
         
-        func routine<A1: Swick.Matcher, A2: Swick.Matcher where A1.MatchingType == String, A2.MatchingType == Int>(a: A1, b: A2) -> Swick.StubForFunctionBuilder<(String, Int), Int> {
+        func routine<A1: Swick.Matcher, A2: Swick.Matcher>(_ a: A1, b: A2) -> Swick.StubForFunctionBuilder<(String, Int), Int> where A1.MatchingType == String, A2.MatchingType == Int {
             let matcher = Swick.FunctionalMatcher<(String, Int)>(matchingFunction: { (args: (String, Int)) -> Bool in
                 return a.valueIsMatching(args.0) && b.valueIsMatching(args.1)
             })
@@ -35,9 +35,9 @@ class ProtocolMock: Protocol, MockType {
     }
     
     class ExpectationBuilder: Swick.ExpectationBuilder {
-        private let mockManager: Swick.MockManager
-        private let times: Swick.FunctionalMatcher<UInt>
-        private let fileLine: Swick.FileLine
+        fileprivate let mockManager: Swick.MockManager
+        fileprivate let times: Swick.FunctionalMatcher<UInt>
+        fileprivate let fileLine: Swick.FileLine
         
         required init(mockManager: Swick.MockManager, times: Swick.FunctionalMatcher<UInt>, fileLine: Swick.FileLine) {
             self.mockManager = mockManager
@@ -45,7 +45,7 @@ class ProtocolMock: Protocol, MockType {
             self.fileLine = fileLine
         }
         
-        func routine<A1: Swick.Matcher, A2: Swick.Matcher where A1.MatchingType == String, A2.MatchingType == Int>(a: A1, b: A2) -> Void {
+        func routine<A1: Swick.Matcher, A2: Swick.Matcher>(_ a: A1, b: A2) -> Void where A1.MatchingType == String, A2.MatchingType == Int {
             let matcher = Swick.FunctionalMatcher<(String, Int)>(matchingFunction: { (args: (String, Int)) -> Bool in
                 return a.valueIsMatching(args.0) && b.valueIsMatching(args.1)
             })
@@ -66,7 +66,7 @@ class ProtocolMock: Protocol, MockType {
         self.init(mockManager: Swick.SwickMockManager(fileLine: Swick.FileLine(file: file, line: line)))
     }
     
-    func routine(a: String, b: Int) -> Int {
+    func routine(_ a: String, b: Int) -> Int {
         return try! mockManager.call(functionId: "0", args: (a, b))
     }
 }

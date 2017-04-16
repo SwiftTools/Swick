@@ -14,8 +14,7 @@ public extension MockType where StubBuilder: Swick.StubBuilder, ExpectationBuild
         )
     }
     
-    @warn_unused_result
-    func expect<T: Matcher where T.MatchingType == UInt>(times: T, file: StaticString = #file, line: UInt = #line) -> ExpectationBuilder {
+    func expect<T: Matcher>(times: T, file: StaticString = #file, line: UInt = #line) -> ExpectationBuilder where T.MatchingType == UInt {
         return ExpectationBuilder.init(
             mockManager: mockManager,
             times: Swick.FunctionalMatcher(matcher: times),
@@ -23,13 +22,14 @@ public extension MockType where StubBuilder: Swick.StubBuilder, ExpectationBuild
         )
     }
     
-    @warn_unused_result
+    
     func stub() -> StubBuilder {
         return StubBuilder.init(mockManager: mockManager)
     }
     
+    @discardableResult
     func verify() -> SwickVoid {
-        mockManager.verify()
+        let _ = mockManager.verify()
         return Swick.SwickVoid()
     }
 }

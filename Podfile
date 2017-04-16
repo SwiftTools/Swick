@@ -1,7 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 workspace 'Swick.xcworkspace'
-xcodeproj 'Swick.xcodeproj'
+project 'Swick.xcodeproj'
 
 inhibit_all_warnings!
 

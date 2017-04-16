@@ -3,6 +3,6 @@
 // This program is made available under the terms of the MIT License.
 //
 
-public enum SwickError: ErrorType {
+public enum SwickError: Error {
     case ResultWasNotStubbed
 }

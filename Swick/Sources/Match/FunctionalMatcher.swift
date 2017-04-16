@@ -6,17 +6,17 @@
 public struct FunctionalMatcher<T>: Matcher {
     public typealias MatchingType = T
     
-    private let matchingFunction: T -> Bool
+    private let matchingFunction: (T) -> Bool
     
-    public init(matchingFunction: T -> Bool) {
+    public init(matchingFunction: @escaping (T) -> Bool) {
         self.matchingFunction = matchingFunction
     }
     
-    public init<U: Matcher where U.MatchingType == T>(matcher: U) {
+    public init<U: Matcher>(matcher: U) where U.MatchingType == T {
         self.matchingFunction = matcher.valueIsMatching
     }
     
-    public func valueIsMatching(value: MatchingType) -> Bool {
+    public func valueIsMatching(_ value: MatchingType) -> Bool {
         return matchingFunction(value)
     }
 }
@@ -39,18 +39,18 @@ public func none<T>() -> FunctionalMatcher<T> {
     return FunctionalMatcher<T> { _ in return false }
 }
 
-public func equals<T where T: Equatable>(value: T) -> FunctionalMatcher<T> {
+public func equals<T>(_ value: T) -> FunctionalMatcher<T> where T: Equatable {
     return FunctionalMatcher<T> { other in value == other }
 }
 
-public func isSame<T where T: AnyObject>(value: T) -> FunctionalMatcher<T> {
+public func isSame<T>(_ value: T) -> FunctionalMatcher<T> where T: AnyObject {
     return FunctionalMatcher<T> { other in value === other }
 }
 
-public func atLeast<T where T: Comparable>(atLeast: T) -> FunctionalMatcher<T> {
+public func atLeast<T>(_ atLeast: T) -> FunctionalMatcher<T> where T: Comparable {
     return FunctionalMatcher<T> { given in given >= atLeast }
 }
 
-public func atMost<T where T: Comparable>(atLeast: T) -> FunctionalMatcher<T> {
+public func atMost<T>(_ atLeast: T) -> FunctionalMatcher<T> where T: Comparable {
     return FunctionalMatcher<T> { given in given <= atLeast }
 }

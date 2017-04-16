@@ -4,18 +4,18 @@
 //
 
 public protocol MockManager {
-    func call<Args, ReturnType>(functionId functionId: String, args: Args) throws -> ReturnType
+    func call<Args, ReturnType>(functionId: String, args: Args) throws -> ReturnType
     
     func verify() -> VerificationResult
     
     func addStub<Args>(
-        functionId functionId: String,
-        closure: (Any) -> Any,
+        functionId: String,
+        closure: @escaping (Any) -> Any,
         matcher: FunctionalMatcher<Args>
     )
     
     func addExpecatation<Args>(
-        functionId functionId: String,
+        functionId: String,
         fileLine: FileLine,
         times: FunctionalMatcher<UInt>,
         matcher: FunctionalMatcher<Args>

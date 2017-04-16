@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5DFC58C89E340F5D90A4039C /* Pods_SwickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DAD637B98BFA84E9AEE7ADF /* Pods_SwickTests.framework */; };
+		657F5AB95EDFA5E715442730 /* libPods-Swick.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB1A5EE57BEF53FDA9FE1CB /* libPods-Swick.a */; };
+		90EB9E9C213F93A8DF50030F /* Pods_SwickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A830CF7D2D076E464B97BA0B /* Pods_SwickTests.framework */; };
 		F82B47021C791D36003A62CA /* Swick.h in Headers */ = {isa = PBXBuildFile; fileRef = F82B47011C791D36003A62CA /* Swick.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F82B47091C791D36003A62CA /* Swick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82B46FE1C791D36003A62CA /* Swick.framework */; };
 		F83683FA1C8EC263005442E5 /* ProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83683F91C8EC263005442E5 /* ProtocolTests.swift */; };
@@ -46,15 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D03D14FD97A6D523D3D8B90 /* Pods-SwickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwickTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwickTests/Pods-SwickTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2A3DCBBC791A7563339CE0CA /* Pods_SwickGen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwickGen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4932C477C9D79392C8788960 /* Pods-SwickGen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwickGen.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwickGen/Pods-SwickGen.release.xcconfig"; sourceTree = "<group>"; };
-		4B308736033724607BD7CD00 /* Pods-SwickGen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwickGen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwickGen/Pods-SwickGen.debug.xcconfig"; sourceTree = "<group>"; };
-		8C6398CADB2A4C19C5C5F76D /* Pods_SwickGenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwickGenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DAD637B98BFA84E9AEE7ADF /* Pods_SwickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A58EAA5F61AECBF90BB6382B /* Pods-SwickGenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwickGenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwickGenTests/Pods-SwickGenTests.release.xcconfig"; sourceTree = "<group>"; };
-		C6D25348728D2F96B8EEB095 /* Pods-SwickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwickTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwickTests/Pods-SwickTests.release.xcconfig"; sourceTree = "<group>"; };
-		F6717E697CFBA548493D1C66 /* Pods-SwickGenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwickGenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwickGenTests/Pods-SwickGenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3713BBFEBFB03D9CC8469D03 /* Pods-Swick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swick/Pods-Swick.debug.xcconfig"; sourceTree = "<group>"; };
+		44A197FC52A29FF3F8B1C06A /* Pods-SwickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwickTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwickTests/Pods-SwickTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A42748E676CE81F21B6C6EC /* Pods-SwickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwickTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwickTests/Pods-SwickTests.release.xcconfig"; sourceTree = "<group>"; };
+		A830CF7D2D076E464B97BA0B /* Pods_SwickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB1A5EE57BEF53FDA9FE1CB /* libPods-Swick.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swick.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC3AB59BBCC5CB95A6F1D56 /* Pods-Swick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swick.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swick/Pods-Swick.release.xcconfig"; sourceTree = "<group>"; };
 		F82B46FE1C791D36003A62CA /* Swick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82B47011C791D36003A62CA /* Swick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swick.h; sourceTree = "<group>"; };
 		F82B47031C791D36003A62CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				657F5AB95EDFA5E715442730 /* libPods-Swick.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F82B47091C791D36003A62CA /* Swick.framework in Frameworks */,
-				5DFC58C89E340F5D90A4039C /* Pods_SwickTests.framework in Frameworks */,
+				90EB9E9C213F93A8DF50030F /* Pods_SwickTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,22 +111,19 @@
 			children = (
 				F87A68931C7C92F6009AB422 /* SourceKittenFramework.framework */,
 				F82B488B1C7A3682003A62CA /* SwiftXPC.framework */,
-				2A3DCBBC791A7563339CE0CA /* Pods_SwickGen.framework */,
-				8C6398CADB2A4C19C5C5F76D /* Pods_SwickGenTests.framework */,
-				8DAD637B98BFA84E9AEE7ADF /* Pods_SwickTests.framework */,
+				BBB1A5EE57BEF53FDA9FE1CB /* libPods-Swick.a */,
+				A830CF7D2D076E464B97BA0B /* Pods_SwickTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		884C6684D24098293CC11E85 /* Pods */ = {
+		C416186A09DAA0C411B16D0D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4B308736033724607BD7CD00 /* Pods-SwickGen.debug.xcconfig */,
-				4932C477C9D79392C8788960 /* Pods-SwickGen.release.xcconfig */,
-				F6717E697CFBA548493D1C66 /* Pods-SwickGenTests.debug.xcconfig */,
-				A58EAA5F61AECBF90BB6382B /* Pods-SwickGenTests.release.xcconfig */,
-				0D03D14FD97A6D523D3D8B90 /* Pods-SwickTests.debug.xcconfig */,
-				C6D25348728D2F96B8EEB095 /* Pods-SwickTests.release.xcconfig */,
+				3713BBFEBFB03D9CC8469D03 /* Pods-Swick.debug.xcconfig */,
+				CFC3AB59BBCC5CB95A6F1D56 /* Pods-Swick.release.xcconfig */,
+				44A197FC52A29FF3F8B1C06A /* Pods-SwickTests.debug.xcconfig */,
+				7A42748E676CE81F21B6C6EC /* Pods-SwickTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -139,7 +135,7 @@
 				F82B470C1C791D36003A62CA /* SwickTests */,
 				F82B46FF1C791D36003A62CA /* Products */,
 				2839BEB5A4056CFD9C0174F9 /* Frameworks */,
-				884C6684D24098293CC11E85 /* Pods */,
+				C416186A09DAA0C411B16D0D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -290,10 +286,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F82B47121C791D36003A62CA /* Build configuration list for PBXNativeTarget "Swick" */;
 			buildPhases = (
+				28A6549BD4131833D673221F /* [CP] Check Pods Manifest.lock */,
 				F82B46F91C791D36003A62CA /* Sources */,
 				F82B46FA1C791D36003A62CA /* Frameworks */,
 				F82B46FB1C791D36003A62CA /* Headers */,
 				F82B46FC1C791D36003A62CA /* Resources */,
+				C2C15865DBE05EEC7F477B37 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,12 +306,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F82B47151C791D36003A62CA /* Build configuration list for PBXNativeTarget "SwickTests" */;
 			buildPhases = (
-				A05168117BE5A61E6F96669A /* Check Pods Manifest.lock */,
+				9D899B1B307AE5069C9E1DCA /* [CP] Check Pods Manifest.lock */,
 				F82B47041C791D36003A62CA /* Sources */,
 				F82B47051C791D36003A62CA /* Frameworks */,
 				F82B47061C791D36003A62CA /* Resources */,
-				C97D1BB547C3B7C26545EE0C /* Embed Pods Frameworks */,
-				D8759DAD2824AD305719C5EA /* Copy Pods Resources */,
+				F8F26580959DC981339DF8DC /* [CP] Embed Pods Frameworks */,
+				68CC48688A7BB05DB6EA9C29 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -337,9 +335,11 @@
 				TargetAttributes = {
 					F82B46FD1C791D36003A62CA = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
 					};
 					F82B47071C791D36003A62CA = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -380,49 +380,79 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A05168117BE5A61E6F96669A /* Check Pods Manifest.lock */ = {
+		28A6549BD4131833D673221F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C97D1BB547C3B7C26545EE0C /* Embed Pods Frameworks */ = {
+		68CC48688A7BB05DB6EA9C29 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwickTests/Pods-SwickTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D8759DAD2824AD305719C5EA /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwickTests/Pods-SwickTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D899B1B307AE5069C9E1DCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2C15865DBE05EEC7F477B37 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swick/Pods-Swick-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8F26580959DC981339DF8DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwickTests/Pods-SwickTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -567,6 +597,7 @@
 		};
 		F82B47131C791D36003A62CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3713BBFEBFB03D9CC8469D03 /* Pods-Swick.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -591,11 +622,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		F82B47141C791D36003A62CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC3AB59BBCC5CB95A6F1D56 /* Pods-Swick.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -619,30 +652,33 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.razinov.Swick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		F82B47161C791D36003A62CA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D03D14FD97A6D523D3D8B90 /* Pods-SwickTests.debug.xcconfig */;
+			baseConfigurationReference = 44A197FC52A29FF3F8B1C06A /* Pods-SwickTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SwickTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razinov.SwickTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		F82B47171C791D36003A62CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6D25348728D2F96B8EEB095 /* Pods-SwickTests.release.xcconfig */;
+			baseConfigurationReference = 7A42748E676CE81F21B6C6EC /* Pods-SwickTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SwickTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razinov.SwickTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

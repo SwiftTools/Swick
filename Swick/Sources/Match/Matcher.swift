@@ -5,11 +5,11 @@
 
 public protocol Matcher {
     associatedtype MatchingType
-    func valueIsMatching(value: MatchingType) -> Bool
+    func valueIsMatching(_ value: MatchingType) -> Bool
 }
 
 extension Equatable {
-    public func valueIsMatching(value: Self) -> Bool {
+    public func valueIsMatching(_ value: Self) -> Bool {
         return self == value
     }
 }
@@ -83,21 +83,19 @@ extension Equatable {
 //extension Zip2Generator: Matcher {}
 //extension Zip2Sequence: Matcher {}
 
-extension AnyBidirectionalIndex: Matcher {}
-extension AnyForwardIndex: Matcher {}
-extension AnyRandomAccessIndex: Matcher {}
+extension AnyIndex: Matcher {}
 extension AutoreleasingUnsafeMutablePointer: Matcher {}
 extension Bool: Matcher {}
-extension COpaquePointer: Matcher {}
+extension OpaquePointer: Matcher {}
 extension Character: Matcher {}
-extension ClosedInterval: Matcher {}
+extension ClosedRange: Matcher {}
 extension DictionaryIndex: Matcher {}
 extension Double: Matcher {}
 extension FlattenBidirectionalCollectionIndex: Matcher {}
 extension FlattenCollectionIndex: Matcher {}
 extension Float: Matcher {}
 extension Float80: Matcher {}
-extension HalfOpenInterval: Matcher {}
+extension Range: Matcher {}
 extension Int: Matcher {}
 extension Int16: Matcher {}
 extension Int32: Matcher {}
@@ -106,9 +104,6 @@ extension Int8: Matcher {}
 extension LazyFilterIndex: Matcher {}
 extension ManagedBufferPointer: Matcher {}
 extension ObjectIdentifier: Matcher {}
-extension Range: Matcher {}
-extension ReverseIndex: Matcher {}
-extension ReverseRandomAccessIndex: Matcher {}
 extension Set: Matcher {}
 extension SetIndex: Matcher {}
 extension String: Matcher {}

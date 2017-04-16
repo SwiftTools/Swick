@@ -1,3 +1,5 @@
-protocol Math {
-    func sum(a: Int, b: Int) -> Int
+protocol Mockable {}
+
+protocol Math: Mockable {
+    func sum(_ a: Int, b: Int) -> Int
 }

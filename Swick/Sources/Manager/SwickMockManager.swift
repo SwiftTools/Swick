@@ -15,7 +15,7 @@ public class SwickMockManager: MockManager {
         self.fileLine = fileLine
     }
     
-    public func call<Args, ReturnType>(functionId functionId: String, args: Args) throws -> ReturnType {
+    public func call<Args, ReturnType>(functionId: String, args: Args) throws -> ReturnType {
         let callRecord = CallRecord(
             functionId: functionId,
             args: args
@@ -24,7 +24,7 @@ public class SwickMockManager: MockManager {
         callRecords.append(callRecord)
         
         if let stubs = stubs[functionId] {
-            for stub in stubs.reverse() {
+            for stub in stubs.reversed() {
                 if stub.matcher.valueIsMatching(args) {
                     return stub.closure(args) as! ReturnType
                 }
@@ -54,7 +54,7 @@ public class SwickMockManager: MockManager {
                         fileLine: expectation.fileLine
                     )
                     fails.append(failDescription)
-                    failer.fail(failDescription)
+                    failer.fail(failDescription: failDescription)
                 }
             }
         }
@@ -66,7 +66,7 @@ public class SwickMockManager: MockManager {
         }
     }
     
-    public func addExpecatation<Args>(functionId functionId: String, fileLine: FileLine, times: FunctionalMatcher<UInt>, matcher: FunctionalMatcher<Args>) {
+    public func addExpecatation<Args>(functionId: String, fileLine: FileLine, times: FunctionalMatcher<UInt>, matcher: FunctionalMatcher<Args>) {
         let expectation = Expectation(
             matcher: matcher.byStrippingType(),
             times: times,
@@ -75,7 +75,7 @@ public class SwickMockManager: MockManager {
         addExpectation(expectation, functionId: functionId)
     }
     
-    public func addStub<Args>(functionId functionId: String, closure: (Any) -> Any, matcher: FunctionalMatcher<Args>) {
+    public func addStub<Args>(functionId: String, closure: @escaping (Any) -> Any, matcher: FunctionalMatcher<Args>) {
         let stub = Stub(
             closure: closure,
             matcher: matcher.byStrippingType()
@@ -83,7 +83,7 @@ public class SwickMockManager: MockManager {
         addStub(stub, functionId: functionId)
     }
     
-    private func addStub(stub: Stub, functionId: String) {
+    private func addStub(_ stub: Stub, functionId: String) {
         if stubs[functionId] != nil {
             stubs[functionId]?.append(stub)
         } else {
@@ -91,7 +91,7 @@ public class SwickMockManager: MockManager {
         }
     }
     
-    private func addExpectation(expectation: Expectation, functionId: String) {
+    private func addExpectation(_ expectation: Expectation, functionId: String) {
         if expectations[functionId] != nil {
             expectations[functionId]?.append(expectation)
         } else {
